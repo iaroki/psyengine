@@ -2,22 +2,39 @@ body {
     background-color: orange;
 }
 
-a:link {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color: black
 }
 
-a:visited {
-    text-decoration: none;
-    color: black
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: black
+.active {
+    background-color: #4CAF50;
 }
 
-a:active {
-    text-decoration: underline;
-    color: black
+img {
+    display: block;
+    margin: auto;
+    width: 44%;
+    border-radius: 8px;
 }
+

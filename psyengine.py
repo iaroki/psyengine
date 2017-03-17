@@ -9,6 +9,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/denied')
+def denied():
+    return render_template('denied.html')
+
 @app.route('/psyanimal', methods=['POST', 'GET'])
 def psyanimal():
     with open('questions.json', 'r') as jsonfile:
